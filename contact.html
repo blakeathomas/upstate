@@ -36,14 +36,14 @@
       <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Upstate Paint Pro</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
         aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="index.html">Home
-                <span class="sr-only">(current)</span>
-              </a>
+              <span class="sr-only">(current)</span>
+            </a>
           </li>
           <li class="nav-item px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
@@ -136,10 +136,24 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
     crossorigin="anonymous"></script>
   <!-- Contact Script -->
-  <script src="contact.js"></script>
+  <script>
+    var $form = $('form#contact-form'),
+      url = 'https://script.google.com/macros/s/AKfycbzutdHQQ35URKd6478r4JkVmNj8LbzaWKpvgwV1z_mkjjqcl8Pq/exec'
+
+    $('#submit-form').on('click', function (e) {
+      e.preventDefault();
+      var jqxhr = $.ajax({
+        url: url,
+        method: "GET",
+        dataType: "json",
+        data: $form.serializeObject()
+      }).success(
+        // do something
+        );
+    })
+
+
   </script>
-  <script src="contact.js"></script>
-</script>
 
   <!-- Zoom when clicked function for Google Map -->
   <script>

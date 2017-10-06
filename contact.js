@@ -12,6 +12,6 @@ data: $form.serializeObject()
 // do something
 );
 })
-})
+
 
 
