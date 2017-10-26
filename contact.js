@@ -8,6 +8,7 @@ url: url,
 method: "post",
 data: $form.serialize()
 }).done(
-// do something
+    $('#submit-form').css('background-color', 'green')
+
 );
 })
