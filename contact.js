@@ -5,9 +5,13 @@ $('#submit-form').on('click', function(e) {
 e.preventDefault();
 var jqxhr = $.ajax({
 url: url,
-method: "post",
+method: "GET",
+dataType: "json",
 data: $form.serialize()
 }).sucess(
 window.location.href('index.html')
 );
 })
+
+
+
