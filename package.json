@@ -1,7 +1,7 @@
 {
-  "title": "Business Casual",
-  "name": "startbootstrap-business-casual",
-  "version": "4.0.0-beta",
+  "title": "Upstate Paint Pro",
+  "name": "upstate",
+  "version": "1.0.0",
   "description": "A casual HTML website theme for businesses built with Bootstrap",
   "keywords": [
     "css",
@@ -13,17 +13,18 @@
   ],
   "homepage": "https://startbootstrap.com/template-overviews/business-casual",
   "bugs": {
-    "url": "https://github.com/BlackrockDigital/startbootstrap-business-casual/issues",
-    "email": "feedback@startbootstrap.com"
+    "url": "https://github.com/blakeathomas/blog/issues",
+    "email": "cyberion2016@Gmail.com"
   },
   "license": "MIT",
   "author": "Start Bootstrap",
   "contributors": [
-    "David Miller (http://davidmiller.io/)"
+    "David Miller (http://davidmiller.io/)",
+    "Blake Thomas (https://blakeathomas.github.io)"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/BlackrockDigital/startbootstrap-business-casual.git"
+    "url": "https://github.com/blakeathomas/blog"
   },
   "dependencies": {
     "bootstrap": "^4.0.0-beta",
