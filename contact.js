@@ -7,7 +7,7 @@ var jqxhr = $.ajax({
 url: url,
 method: "post",
 data: $form.serialize()
-}).sucess(
-window.location.href('index.html')
+}).done(
+// do something
 );
 })
