@@ -8,8 +8,8 @@ url: url,
 method: "GET",
 dataType: "json",
 data: $form.serialize()
-}).done(
-// do something
+}).sucess(
+window.location.href('index.html')
 );
 })
 
